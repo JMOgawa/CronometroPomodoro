@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-br"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link href="./style.css" rel="stylesheet" type="text/css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <title>Pomodoro</title> 
+ </head> 
+ <body>
+  <main id="container"> 
+   <div id="main-container"> 
+    <div id="botoes"> 
+      <button class="btn btn-pausa" id="btn_long">Pausa Longa</button>
+      <button class="btn" id="btn_timer">Foco</button> 
+      <button class="btn btn-pausa" id="btn_short">Pausa Curta</button> 
+    </div> 
+    <div id="timer"> 
+     <p id="tempo"></p> 
+    </div> 
+    <div class="f1 funcoes"> 
+      <button type="button" id="btn-iniciar" onclick="iniciarContagem()">Iniciar</button> 
+      <button type="button" class="hidden" id="btn-parar" onclick="pararContagem()">Parar</button> 
+      <i class="bi bi-arrow-clockwise funcao" onclick="reiniciar ()"></i> 
+    </div> 
+   </div> 
+   <div id="end-container" class=" f2 funcoes"> 
+     <i class="bi bi-gear funcao" onclick="settings()"></i>
+     <i class="bi bi-arrows-fullscreen funcao" onclick="fullscreen()"></i> 
+   </div>
+  </main> 
+  <script src="./script.js"></script> 
+ </body>
+</html>
