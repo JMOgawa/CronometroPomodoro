@@ -81,14 +81,19 @@ $(document).ready(function () {
     });
 
     $(".bi-arrows-fullscreen").click(function () {
-        const elem = document.documentElement;
-        if (elem.requestFullscreen) {
-            console.log("Fullscreen...");
-            elem.requestFullscreen();
-        }
-        if (document.exitFullscreen) {
-            console.log("SAINDO Fullscreen...");
-            document.exitFullscreen();
+        var doc = document.documentElement;
+        if (!document.fullscreenElement) {
+            doc.requestFullscreen();
+            console.log("Em tela cheia");
+        } else {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
+            }
+            console.log("Sair da tela cheia");
         }
     });
 

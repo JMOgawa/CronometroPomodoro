@@ -8,14 +8,14 @@
 body{
   margin: 0;
   background-color: rgba(0, 0, 0, 0.25);
-  background-image: url('./imagens/fireplace.jpg');
+  background-image: url('./imagens/paisagem2.jpg');
   background-blend-mode: color;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-main{
+ main{
   height: 90vh;
   width: 100%;
   display: flex;
@@ -33,7 +33,7 @@ main{
   display: inline-block;
   z-index: 1;
   position: relative;  
-  padding: 5px;
+  padding: 5px 15px;
   margin: 0 40px;
   border: none;
   border-bottom: 1px solid whitesmoke;
@@ -44,9 +44,15 @@ main{
 }
 
 .btn:hover{
-  border: none;
+  /* border: none;
   background-color: whitesmoke;
   color: black;
+  transition: background-color 0.5s ease-in-out; */
+  
+  border: 1px solid whitesmoke;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
   transition: background-color 0.5s ease-in-out;
 }
 
@@ -58,7 +64,6 @@ main{
 
 #btn-iniciar, #btn-parar{  
   border: none;
-  border-radius: 12px;
   outline: none;
   background-color: whitesmoke;
   color: black;
@@ -66,6 +71,18 @@ main{
   padding: 8px 20px;
   margin-right: 10px;
   font-size: 12pt;
+}
+
+#btn-iniciar:hover, #btn-parar:hover{
+  border: 1px solid whitesmoke;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.hidden{
+  display: none;
 }
 
 #tempo{
@@ -96,44 +113,3 @@ p{
 .bi-arrow-clockwise::before {
   font-size: 15pt;
 }
-
-#btn-iniciar:hover, #btn-parar:hover{
-  border: 1px solid whitesmoke;
-  outline: none;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: whitesmoke;
-  transition: background-color 0.5s ease-in-out;
-}
-
-.hidden{
-  display: none;
-}
-
-
-
-/* FULL SCREEN */
-
-
-/* ------------------------------------------------------------------ */
-/* #nav i{
-  display: flex;
-  
-}
-#setting-container{
-  width: auto;
-  height: 600px;
-  background-color: yellow;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
-  
-}
-#setting-nav{
-  background-color: yellow;
-}
-#setting-tema{
-  background-color: blue;
-}
-#setting-cronometro{
-  background-color: green;
-} */
