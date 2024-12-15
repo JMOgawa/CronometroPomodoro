@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Julius+Sans+One&family=Lexend+Deca:wght@100..900&display=swap');
+
+*{
+  color: white;
+  font-family: 'Lexend Deca';
+}
+
+body{
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  background-image: url('./imagens/fireplace.jpg');
+  background-blend-mode: color;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+main{
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#main-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  display: inline-block;
+  z-index: 1;
+  position: relative;  
+  padding: 5px;
+  margin: 0 40px;
+  border: none;
+  border-bottom: 1px solid whitesmoke;
+  background-color: transparent;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  border: none;
+  background-color: whitesmoke;
+  color: black;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.ativo{
+  border: none;
+  background-color: whitesmoke;
+  color: black;
+}
+
+#btn-iniciar, #btn-parar{  
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  background-color: whitesmoke;
+  color: black;
+  font-weight: normal;
+  padding: 8px 20px;
+  margin-right: 10px;
+  font-size: 12pt;
+}
+
+#tempo{
+  font-weight: bold;
+  font-size: 50pt;
+}
+
+p{
+  margin: 35px;
+}
+
+.f1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f2 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.bi::before {
+  margin: 10px;
+  font-size: 12pt;
+}
+.bi-arrow-clockwise::before {
+  font-size: 15pt;
+}
+
+#btn-iniciar:hover, #btn-parar:hover{
+  border: 1px solid whitesmoke;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.hidden{
+  display: none;
+}
+
+
+
+/* FULL SCREEN */
+
+
+/* ------------------------------------------------------------------ */
+/* #nav i{
+  display: flex;
+  
+}
+#setting-container{
+  width: auto;
+  height: 600px;
+  background-color: yellow;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  
+}
+#setting-nav{
+  background-color: yellow;
+}
+#setting-tema{
+  background-color: blue;
+}
+#setting-cronometro{
+  background-color: green;
+} */

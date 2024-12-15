@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>Pomodoro</title>
+</head>
+
+<body>
+  <main id="container">
+    <a href="./test.html">ttttttttttt</a>
+    <div id="main-container">
+      <div id="botoes">
+        <button class="btn btn-descanso" id="btn_long">Descanso Longo</button>
+        <button class="btn ativo" id="btn_timer">Foco</button>
+        <button class="btn btn-descanso" id="btn_short">Descanso Curto</button>
+      </div>
+      <div id="timer">
+        <p id="tempo">25:00</p>
+      </div>
+      <div class="f1 funcoes">
+        <button type="button" id="btn-iniciar" onclick="iniciarContagem()">Iniciar</button>
+        <button type="button" class="hidden"  id="btn-parar" onclick="pararContagem()">Pausar</button>
+        <i class="bi bi-arrow-clockwise funcao"></i>
+      </div>
+    </div>
+  </main>
+  <div id="end-container" class="f2 funcoes">
+    <i class="bi bi-gear funcao"></i>
+    <i class="bi bi-arrows-fullscreen funcao"></i>
+  </div>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
